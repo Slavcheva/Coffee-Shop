@@ -1,0 +1,46 @@
+.site-footer {
+    background: #252525;
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.site-footer .container .widget {
+    flex-basis: 100%;
+}
+
+.site-footer h4 {
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.site-footer a {
+    color: #FFFFFF;
+    padding-bottom: 1em;
+}
+
+.site-footer a:hover {
+    color: #F66D37;
+}
+
+.site-footer i {
+    padding-right: 1em;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+    .site-footer .container .widget {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .site-footer .container .widget {
+        flex-basis: 22%;
+    }
+}

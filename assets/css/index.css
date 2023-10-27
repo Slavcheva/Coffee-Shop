@@ -1,6 +1,7 @@
 @import "typography.css";
 @import "header.css";
 @import "buttons.css";
+@import "footer.css";
 
 .container{
     max-width: 1200px;
