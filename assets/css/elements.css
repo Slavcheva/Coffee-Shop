@@ -1,0 +1,22 @@
+/*Images Styles*/
+.image-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.image-wrapper:before{
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.image-wrapper img{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
