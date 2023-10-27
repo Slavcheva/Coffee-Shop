@@ -1,0 +1,129 @@
+/*Navigation*/
+.nav-wrapper {
+    background: #252525;
+    color: #FFF;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.site-menu #nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.site-menu label .fa-xmark {
+    display: none;
+}
+
+.site-menu .site-nav {
+    display: none;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #252525;
+    padding: 1em 0;
+}
+
+.site-menu .site-nav a {
+    color: #FFF;
+    padding: 1em;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.site-menu .site-nav a:hover {
+    color: #F66D37;
+}
+
+.toggle-btn {
+    font-size: 2em;
+    background: #FFFFFF;
+    color: #7F7F7F;
+    padding: 0 0.5em;
+    border-radius: 0.3em;
+}
+
+#nav-toggle:checked + label > .fa-xmark {
+    display: inline-block;
+}
+
+#nav-toggle:checked + label > .fa-bars {
+    display: none;
+}
+
+#nav-toggle:checked + label + nav {
+    display: block;
+}
+
+
+/*Banner Section*/
+.site-banner{
+    background: center/cover no-repeat url("../images/banner-bg.png");
+    color: #FFFFFF;
+}
+
+.site-banner .content{
+    /*width: 50%;*/
+    padding: 2em 0;
+}
+
+.site-banner .subtitle{
+    color: black;
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .site-brand img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-wrapper {
+        padding: 1.5em;
+    }
+
+    .site-menu label {
+        display: none;
+    }
+
+    .site-menu .site-nav {
+        display: block;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .site-menu .site-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1em
+    }
+
+    .site-menu .site-nav a {
+        padding: 0;
+    }
+    .site-banner .subtitle{
+        font-size: 3.7em;
+    }
+    .site-banner .content{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .site-banner .content{
+        width: 50%;
+    }
+}
