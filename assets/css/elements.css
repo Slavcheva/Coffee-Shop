@@ -20,3 +20,8 @@
     transform: translate(-50%, -50%);
 }
 
+
+.gallery-image img{
+    height: 100%;
+}
+

@@ -1,6 +1,5 @@
-
 /*About Us Section*/
-.section-about .container{
+.section-about .container {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -8,21 +7,63 @@
     margin: 0 auto;
 }
 
-.section-about .container div{
+.section-about .container div {
     flex: 1 1 47%;
     color: #4c4c4b;
 }
 
-.section-about h2{
+.section-about h2 {
     color: #F66D37;
     margin-bottom: 1em;
 }
 
-.section-about p{
+.section-about p {
     margin-bottom: 1em;
 }
 
-.section-about button{
+.section-about button {
     margin-top: 1.5em;
 }
 
+/*Gallery Section*/
+.section-gallery {
+    text-align: center;
+}
+
+.section-gallery h2 {
+    color: #F66D37;
+    margin-bottom: 1em;
+}
+
+.section-gallery p {
+    margin: 2em;
+}
+
+.section-gallery button {
+    margin-top: 1.5em;
+}
+
+.section-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.section-gallery ul li {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .section-gallery ul li {
+        flex: 0 0 30%;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .section-gallery ul {
+        gap: 2em;
+    }
+}
