@@ -25,6 +25,7 @@
     margin-top: 1.5em;
 }
 
+
 /*Gallery Section*/
 .section-gallery {
     text-align: center;
@@ -74,6 +75,7 @@
     }
 }
 
+
 /*Services Section*/
 .section-services {
     text-align: center;
@@ -120,6 +122,7 @@
     }
 }
 
+
 /*Testimonial Section*/
 .section-testimonials h2 {
     color: #F66D37;
@@ -134,7 +137,6 @@
     padding: 0 2em;
     position: relative;
     overflow: hidden;
-
 }
 
 .testimonial-box:before {
@@ -163,7 +165,6 @@
     left: initial;
 }
 
-
 .testimonial-box h4 {
     color: #F66D37;
     position: absolute;
@@ -183,8 +184,8 @@
     padding: 3em 0;
 }
 
-/*Contact Section*/
 
+/*Contact Section*/
 .section-contacts h2 {
     color: #F66D37;
     margin-bottom: 1em;
@@ -200,7 +201,7 @@
 
 .contact-wrapper .contact-form {
     background: left/cover no-repeat url("../images/img-9.png");
-    padding:  3em 1em;
+    padding: 3em 1em;
     text-align: center;
 }
 
@@ -219,7 +220,7 @@
     font-size: 1.4em;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .contact-wrapper {
         display: flex;
     }
@@ -230,8 +231,8 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-    .contact-wrapper .contact-form{
+@media screen and (min-width: 1024px) {
+    .contact-wrapper .contact-form {
         padding: 4em;
     }
 }
