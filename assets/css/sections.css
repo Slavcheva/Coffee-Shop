@@ -144,8 +144,8 @@
     content: '';
     width: 80px;
     height: 90%;
-    border-top: 3px solid #F66D37;
-    border-left: 3px solid #F66D37;
+    border-top: 3px solid #252525;
+    border-left: 3px solid #252525;
     position: absolute;
     top: 0.5em;
     left: 0;
@@ -157,8 +157,8 @@
     content: '';
     width: 80px;
     height: 90%;
-    border-bottom: 3px solid #F66D37;
-    border-right: 3px solid #F66D37;
+    border-bottom: 3px solid #252525;
+    border-right: 3px solid #252525;
     position: absolute;
     top: 0.5em;
     right: 0;

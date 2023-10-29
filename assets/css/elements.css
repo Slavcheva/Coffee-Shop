@@ -1,4 +1,4 @@
-/*Images Styles*/
+/*testimonials Styles*/
 .image-wrapper{
     position: relative;
     overflow: hidden;
@@ -20,9 +20,131 @@
     transform: translate(-50%, -50%);
 }
 
-
 .gallery-image img{
     height: 100%;
+}
+
+
+/*Slider Styles*/
+.testimonial-box {
+    width: 100%;
+}
+
+.testimonials {
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.testimonials-inner {
+    width: 500%;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.testimonial-slide,
+.testimonial-box{
+    width: 19%;
+    float: left;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+}
+
+.testimonial-box,
+.testimonial-slide,
+.fake-radio,
+.radio-btn {
+    transition: all 0.5s ease-out;
+}
+
+.cs_anchor{
+    display: none;
+}
+
+#slide1:checked ~ .testimonials .testimonials-inner {
+    margin-left: 0;
+}
+#slide2:checked ~ .testimonials .testimonials-inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ .testimonials .testimonials-inner {
+    margin-left: -200%;
+}
+
+#slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
+#slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
+#slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
+    background: #F56D37;
+}
+.radio-btn {
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    background: #252525;
+    display: inline-block !important;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.labels{
+    text-align: center;
+}
+
+@keyframes bullet {
+    0%, 33.32333333333334%	{
+        background: #F56D37;
+    }
+    33.333333333333336%, 100% {
+        background: #252525;
+    }
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
+    animation: bullet 12300ms infinite -1000ms;
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(2) {
+    animation: bullet 12300ms infinite 3100ms;
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(3) {
+    animation: bullet 12300ms infinite 7200ms;
+}
+
+@keyframes slide {
+    0%, 25.203252032520325%	{ margin-left: 0; }
+    33.333333333333336%, 58.53658536585366%	{ margin-left: -100%; }
+    66.66666666666667%, 91.869918699187%	{ margin-left: -200%; }
+}
+
+
+.slider > #play1:checked ~ .testimonials .testimonials-inner {
+    animation: slide 12300ms infinite;
+}
+
+@keyframes caption {
+    0%, 33.32333333333334%	{
+        opacity: 1;
+    }
+    33.333333333333336%, 100% {
+        opacity: 0;
+    }
+}
+
+#play1:checked ~ .labels .label:nth-child(1) {
+    animation: caption 12300ms infinite -1000ms;
+}
+
+#play1:checked ~ .labels .label:nth-child(2) {
+    animation: caption 12300ms infinite 3100ms;
+}
+
+#play1:checked ~ .labels .label:nth-child(3) {
+    animation: caption 12300ms infinite 7200ms;
 }
 
 
