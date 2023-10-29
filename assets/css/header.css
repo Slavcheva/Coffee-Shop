@@ -38,6 +38,7 @@
     display: inline-block;
     font-size: 1.2em;
     outline: none;
+    transition: all .3s;
 }
 
 .site-menu .site-nav a:focus,
@@ -65,6 +66,31 @@
     display: block;
 }
 
+.site-brand a{
+    position: relative;
+}
+
+.site-brand a:after{
+    transition: all .5s;
+}
+
+.site-brand a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    content: '';
+    color: transparent;
+    background: #F66D37;
+    height: 2px;
+}
+
+.site-brand a:hover::after {
+    width: 100%;
+}
+
 
 /*Banner Section*/
 .site-banner{
@@ -85,6 +111,7 @@
 }
 
 
+/*Header Media Queries*/
 
 @media screen and (max-width: 300px) {
     .site-brand img {
@@ -124,6 +151,7 @@
         width: 70%;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .site-banner .content{
         width: 50%;
